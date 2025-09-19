@@ -1,0 +1,189 @@
+{
+	"info": {
+		"_postman_id": "8ad84cc9-0f01-4359-99e3-a5920c6c355f",
+		"name": "School API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19399863"
+	},
+	"item": [
+		{
+			"name": "Courses",
+			"item": [
+				{
+					"name": "GetCourses",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"John Doe\",\r\n  \"email\": \"john@example.com\",\r\n  \"age\": 21\r\n}\r\n"
+						},
+						"url": {
+							"raw": "{{baseURL}}/api/courses",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"courses"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreateCourse",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"software engineering\",\r\n    \"description\": \"full stack software engineering\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/api/courses/",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"courses",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateCourse",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/api/courses/id",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"courses",
+								"id"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETECOURSE",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Students",
+			"item": []
+		},
+		{
+			"name": "GetSchool",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/api/students",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"students"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateSchool",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"John Doe\",\r\n  \"email\": \"john@example.com\",\r\n  \"age\": 21\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/api/students",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"students"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateSchool",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/api/students/id",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"students",
+						"id"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteSchool",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/api/students/id",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"students",
+						"id"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "baseURL",
+			"value": "",
+			"type": "default"
+		}
+	]
+}
